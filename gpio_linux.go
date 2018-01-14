@@ -152,6 +152,12 @@ func (p *pin) Close() error {
 	return writeFile(filepath.Join(gpiobase, "unexport"), "%d", p.number)
 }
 
+func (p *pin) PullUp() {
+}
+
+func (p *pin) PullDown() {
+}
+
 // Mode retrieves the current mode of the pin.
 func (p *pin) Mode() Mode {
 	var mode string

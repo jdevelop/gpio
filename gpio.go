@@ -31,6 +31,8 @@ type Pin interface {
 	Clear()                          // sets the pin state low
 	Close() error                    // if applicable, closes the pin
 	Get() bool                       // returns the current pin state
+	PullUp()                         // pulls up the internal resistor
+	PullDown()                       // pulls down the internal resistor
 	BeginWatch(Edge, IRQEvent) error // calls the function argument when an edge trigger event occurs
 	EndWatch() error                 // stops watching the pin
 	Wait(bool)                       // wait for pin state to match boolean argument
