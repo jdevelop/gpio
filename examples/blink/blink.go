@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/davecheney/gpio"
-	"github.com/davecheney/gpio/rpi"
+	"github.com/jdevelop/gpio"
+	"github.com/jdevelop/gpio/rpi"
 )
 
 func main() {

@@ -153,9 +153,11 @@ func (p *pin) Close() error {
 }
 
 func (p *pin) PullUp() {
+	panic("Pullup not implemented")
 }
 
 func (p *pin) PullDown() {
+	panic("Pulldown not implemented")
 }
 
 // Mode retrieves the current mode of the pin.

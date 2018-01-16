@@ -5,7 +5,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/davecheney/gpio"
+	"github.com/jdevelop/gpio"
 	"time"
 )
 
@@ -49,8 +49,8 @@ func initGPIO(memfd int) {
 // pin represents a specalised RPi GPIO pin with fast paths for
 // several operations.
 type pin struct {
-	gpio.Pin  // the underlying Pin implementation
-	pin uint8 // the actual pin number
+	gpio.Pin       // the underlying Pin implementation
+	pin      uint8 // the actual pin number
 }
 
 // OpenPin returns a gpio.Pin implementation specalised for the RPi.
